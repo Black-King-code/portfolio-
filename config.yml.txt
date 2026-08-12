@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "th"
+
+collections:
+  - name: "site"
+    label: "ข้อมูลเว็บไซต์ (About / Contact)"
+    files:
+      - name: "general"
+        label: "ข้อมูลทั่วไป"
+        file: "content/site.json"
+        fields:
+          - { label: "สถานะปัจจุบัน (แถบด้านบน Hero)", name: "status", widget: "string" }
+          - { label: "คำอธิบายตัวเอง (หน้าแรก)", name: "heroDescription", widget: "text" }
+          - { label: "คำอธิบายตัวเอง (About Me)", name: "aboutText", widget: "text" }
+          - { label: "อีเมลติดต่อ", name: "email", widget: "string" }
+          - { label: "ลิงก์ GitHub", name: "githubUrl", widget: "string", required: false }
+          - { label: "ลิงก์ Facebook", name: "facebookUrl", widget: "string", required: false }
+          - { label: "ลิงก์ Instagram", name: "instagramUrl", widget: "string", required: false }
+
+  - name: "projects"
+    label: "โปรเจกต์"
+    files:
+      - name: "projects"
+        label: "รายการโปรเจกต์ทั้งหมด"
+        file: "content/projects.json"
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "ชื่อโปรเจกต์", name: "title", widget: "string" }
+              - { label: "คำอธิบายสั้น (โชว์ในการ์ด)", name: "description", widget: "text" }
+              - label: "เทคโนโลยีที่ใช้"
+                name: "tech"
+                widget: "list"
+                default: ["HTML", "CSS", "JavaScript"]
+              - { label: "รูปภาพโปรเจกต์ (ไม่บังคับ)", name: "image", widget: "image", required: false }
+              - { label: "ลิงก์ Source Code", name: "sourceUrl", widget: "string", required: false }
+              - { label: "ลิงก์ Live Demo", name: "demoUrl", widget: "string", required: false }
+              - { label: "ทำไมถึงสร้างโปรเจกต์นี้", name: "why", widget: "text" }
+              - { label: "เรียนรู้อะไรบ้าง", name: "learned", widget: "text" }
+              - { label: "ทำงานอย่างไร", name: "how", widget: "text" }
+              - { label: "ความท้าทายที่เจอ", name: "challenges", widget: "text" }
+              - { label: "อยากปรับปรุงอะไรต่อ", name: "improve", widget: "text" }

@@ -1,1 +1,30 @@
-
+{
+  "items": [
+    {
+      "title": "Problem Solving Arena",
+      "description": "เว็บแอปสำหรับฝึก Logic และ Problem Solving ด้วยโจทย์สั้น ๆ",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "sourceUrl": "https://github.com/Black-King-code/portfolio-",
+      "demoUrl": "",
+      "image": "",
+      "why": "อยากมีพื้นที่ฝึก Logic และ Problem Solving สั้น ๆ ระหว่างเรียน โดยไม่ต้องเปิดหลายเว็บ",
+      "learned": "การแตกโจทย์ให้เป็นขั้นตอนย่อย และการเขียนเงื่อนไข if-else / nested if ให้อ่านง่ายขึ้น",
+      "how": "สุ่มโจทย์จากชุดคำถามที่เตรียมไว้ ผู้ใช้ตอบในหน้าเว็บ แล้วระบบเช็คคำตอบทันทีด้วย JavaScript",
+      "challenges": "ตอนแรกลืมใส่ semicolon หลังเงื่อนไข if ทำให้ผลลัพธ์ผิดทุกครั้ง ต้องไล่ debug ทีละบรรทัด",
+      "improve": "อยากเพิ่มระบบเก็บคะแนน และแยกระดับความยากของโจทย์ในเวอร์ชันถัดไป"
+    },
+    {
+      "title": "Portfolio V1",
+      "description": "เว็บไซต์ Portfolio ส่วนตัวรุ่นแรก สร้างด้วยมือทีละบรรทัด",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "sourceUrl": "https://github.com/Black-King-code/portfolio-",
+      "demoUrl": "https://black-king-code.github.io/portfolio-/",
+      "image": "",
+      "why": "อยากมีเว็บไซต์ส่วนตัวที่รวมทุกอย่างไว้ที่เดียว ทั้งตัวตน ทักษะ และโปรเจกต์ที่ทำ",
+      "learned": "การจัดโครงสร้างไฟล์ CSS/JS แยกโฟลเดอร์ และการ deploy เว็บจริงด้วย GitHub Pages",
+      "how": "สร้างด้วย HTML + CSS + Vanilla JS ล้วน ไม่ใช้ framework เพื่อฝึกพื้นฐานให้แน่นก่อน",
+      "challenges": "ตอนอัปโหลดไฟล์ขึ้น GitHub ผ่านมือถือ พาธไฟล์ผิดที่และไฟล์นามสกุลเพี้ยน ทำให้สไตล์ไม่โหลด ต้องแก้ทีละไฟล์",
+      "improve": "วางแผนจะอัปเกรดเป็น React ในเวอร์ชันถัดไปตาม Roadmap ที่วางไว้"
+    }
+  ]
+}

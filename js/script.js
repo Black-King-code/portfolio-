@@ -9,7 +9,7 @@ if ('IntersectionObserver' in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.05, rootMargin: '0px 0px -10% 0px' });
+  }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
   revealEls.forEach((el) => observer.observe(el));
 
   // Fallback: if something never triggers (e.g. very short pages,
